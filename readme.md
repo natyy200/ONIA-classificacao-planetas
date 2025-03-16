@@ -1,4 +1,4 @@
-### Software / Bibliotecas Utilizado:
+## Software / Bibliotecas Utilizado:
 Utilizei o Google Colab para desenvolver o código e minhas referências foram **Coding with Josh** e **FreeCodeCamp no Youtube**, além dos famosos **Chatgpt** e **DeepSeek** para apoio. 
 As principais bibliotecas que utilizei foram:
 
@@ -9,7 +9,7 @@ As principais bibliotecas que utilizei foram:
 - **Matplotlib** e **Seaborn**: Para visualização de dados e gráficos.
 - **Joblib**: Para salvar e carregar modelos treinados.
 
-### Passos da Resolução da Prova:
+## Passos da Resolução da Prova:
 
 1. **Carregar os dados de treinamento**:
    - Utilizei a função `pd.read_csv()` para carregar o arquivo `treino.csv`, que contém os dados de treinamento. Em seguida, renomeei as colunas para facilitar a visualização e removi a coluna `id`, que não era relevante para o modelo. Além de utilizar .info(), .head() e .describe() do Pandas e matplotlibe seaborn para visualizar os dados. Por fim separei os dados de treino em 10 partes e testei cada uma individualmente.
@@ -50,7 +50,7 @@ Além disso, usei técnicas como **PCA** para reduzir a complexidade dos dados e
 
 No final, o modelo foi capaz de prever com boa precisão a classificação dos planetas, como mostrado pelas métricas de avaliação e pela matriz de confusão.
 
-# Tropeços no caminho
+## Tropeços no caminho
 Como nem tudo são flores comecei com um modelo básico sem nenhum tratamento dos dados utilizando árvore de decisões, mas os resultados esperados foram péssimos em torno de 0.70 e com risco de overfitting. Testei vários modelos como GridSearchCV, SMOTE e vários outros. A variação nos resultados são impressionantes chegando a 0.92 em alguns casos e outros 0.65... isso devido as particularidades de cada modelo e mudanças nos hiperparâmetros.
 No final não sabia da autenticidade dos resultados. Alguns modelos geravam resultados rápidos variando de 2 minutos até 30 minutos.
 
