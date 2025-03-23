@@ -172,6 +172,6 @@ resultado = pd.DataFrame({
 })
 
 # Salvar o arquivo CSV
-resultado.to_csv("ultimate.csv", index=False)
+resultado.to_csv("previsoes.csv", index=False)
 
-print("Arquivo de predição salvo com sucesso: ultimate.csv")
+print("Arquivo de predição salvo com sucesso: previsoes.csv")
